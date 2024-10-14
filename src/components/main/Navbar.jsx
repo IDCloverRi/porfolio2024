@@ -7,8 +7,9 @@ const Navbar = () => {
       <div className="w-full h-full flex flex-row items-center m-auto px-[10px] justify-between">
         <a className="h-auto w-auto flex flex-row items-center">
           <Image
-            src="/avatar.png"
+            src="/navbarIcons/avatar.png"
             alt="avatar"
+            priority
             width={45}
             height={45}
             className="cursor-pointer"

@@ -25,8 +25,10 @@ const Card = ({ item }) => {
           <Image
             src={item.image}
             alt={item.title}
-            layout="fill"
-            objectFit="cover"
+            priority
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+            style={{ objectFit: "cover" }}
             className="rounded-l-lg"
           />
         </div>
@@ -68,16 +70,19 @@ const Card = ({ item }) => {
                 <Image
                   src={item.image}
                   alt={item.title}
-                  layout="fill"
-                  objectFit="cover"
+                  priority
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  style={{ objectFit: "cover" }}
                   className="rounded-lg"
                 />
               </div>
 
               <div className="flex items-center mb-4">
                 <Image
-                  src="/avatar.png"
+                  src="/navbarIcons/avatar.png"
                   alt="Author Avatar"
+                  priority
                   width={40}
                   height={40}
                   className="rounded-full"

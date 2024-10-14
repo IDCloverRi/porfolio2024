@@ -11,7 +11,10 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto">
         {project_images.map(({ id, image, title, github }) => (
-          <ItemLayout className="custom-bg bg-opacity-50 p-6 rounded-2xl">
+          <ItemLayout
+            key={id}
+            className="custom-bg bg-opacity-50 p-6 rounded-2xl"
+          >
             <div className="rounded-xl overflow-hidden">
               <img
                 src={image}

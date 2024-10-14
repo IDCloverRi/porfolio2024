@@ -55,6 +55,7 @@ const CategoryList = () => {
             <Image
               src={item.image}
               alt={item.title}
+              priority
               width={48}
               height={48}
               className="rounded-full"

@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-
 import ItemLayout from "./ItemLayout";
 
 const Card = ({ item }) => {
@@ -15,6 +14,20 @@ const Card = ({ item }) => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
+  // Ngăn chặn cuộn trang khi modal mở
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden"; // Ngăn cuộn
+    } else {
+      document.body.style.overflow = "auto"; // Cho phép cuộn
+    }
+
+    // Dọn dẹp khi component unmount
+    return () => {
+      document.body.style.overflow = "auto"; // Đảm bảo cuộn được khôi phục
+    };
+  }, [isModalOpen]);
 
   return (
     <div className="relative">
@@ -56,7 +69,7 @@ const Card = ({ item }) => {
 
       {/* Modal hiển thị khi bấm Read More */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 ">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white mt-[80px] mb-[40px] p-6 rounded-lg shadow-lg w-[90%] max-w-8xl h-[90%] relative overflow-hidden flex flex-col md:flex-row">
             <button
               className="absolute top-4 right-4 bg-purple-500 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-purple-700 hover:shadow-lg transition-all"
@@ -108,7 +121,7 @@ const Card = ({ item }) => {
             <div className="w-2/3 p-4 flex flex-col mt-8">
               <h1 className="text-4xl font-bold mb-4">{item.title}</h1>
               <div className="flex-1 mt-4 overflow-y-auto max-h-[85%]">
-                <p className="text-gray-600 ">
+                <p className="text-gray-600">
                   {item.fullDescription
                     ? item.fullDescription.split("\n").map((line, index) => (
                         <span key={index}>

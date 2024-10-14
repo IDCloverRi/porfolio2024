@@ -32,7 +32,7 @@ const Card = ({ item }) => {
   return (
     <div className="relative">
       {/* Phần card */}
-      <ItemLayout className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden w-full max-w-7xl mx-auto h-[350px] mb-10 border-2 border-transparent ">
+      <ItemLayout className="relative flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden w-2/3 max-w-7xl mx-auto h-[300px] mb-10 border-2 border-transparent ">
         {/* Phần hình ảnh */}
         <div className="w-full md:w-2/5 relative h-48 md:h-full">
           <Image

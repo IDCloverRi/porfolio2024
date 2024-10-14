@@ -10,7 +10,7 @@ const Contact = () => {
 
       <ItemLayout>
         <div className="container mx-auto flex flex-col gap-8 items-center">
-          <div className=" w-1/5 flex flex-col items-center rounded-lg p-3  bg-white/10 border-2 border-[rgba(var(--accent),0.8)] backdrop-blur-[0.5px] ">
+          <div className=" w-[400px] flex flex-col items-center rounded-lg p-3  bg-white/10 border-2 border-[rgba(var(--accent),0.8)] backdrop-blur-[0.5px] ">
             <h5 className="text-white ">nguyenhuongdiu1710@gmail.com</h5>
             <article className="text-white text-center">
               <MdOutlineEmail className="text-3xl mb-3 mx-auto" />

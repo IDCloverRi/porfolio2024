@@ -13,7 +13,7 @@ const HomeContent = () => {
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div variants={slideInFromTop} className="">
-          <h1 className="text-gradient">Hi I&apos;m Diu Nguyen</h1>
+          <h1 className="text-gradient">Hi, I&apos;m Diu Nguyen!</h1>
         </motion.div>
         <motion.div
           variants={slideInFromLeft(0.1)}
@@ -43,7 +43,7 @@ const HomeContent = () => {
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[150px]"
           href="#contact"
         >
-          Let&apos; talk!
+          Let&apos;s talk!
         </motion.a>
       </div>
     </motion.div>

@@ -1,0 +1,148 @@
+export const skill_data = [
+  {
+    skill_name: "airflow",
+    Image: "/skillicons/airflow.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "aws",
+    Image: "/skillicons/aws.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "bootstrap",
+    Image: "/skillicons/bootstrap.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "docker",
+    Image: "/skillicons/docker.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "github",
+    Image: "/skillicons/github.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "graphql",
+    Image: "/skillicons/graphql.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "hadoop",
+    Image: "/skillicons/hadoop.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "java",
+    Image: "/skillicons/java.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "js",
+    Image: "/skillicons/js.svg",
+    width: 100,
+    height: 100,
+  },
+
+  {
+    skill_name: "kafka",
+    Image: "/skillicons/kafka.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "mongodb",
+    Image: "/skillicons/mongodb.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "mui",
+    Image: "/skillicons/mui.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "mysql",
+    Image: "/skillicons/mysql.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "nextjs",
+    Image: "/skillicons/nextjs.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "nodejs",
+    Image: "/skillicons/nodejs.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "postgresql",
+    Image: "/skillicons/postgresql.svg",
+    width: 100,
+    height: 100,
+  },
+
+  {
+    skill_name: "python",
+    Image: "/skillicons/python.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "reactjs",
+    Image: "/skillicons/reactjs.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "redux",
+    Image: "/skillicons/redux.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "snowflake",
+    Image: "/skillicons/snowflake.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "redis",
+    Image: "/skillicons/redis.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "tailwind",
+    Image: "/skillicons/tailwind.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "springboot",
+    Image: "/skillicons/springboot.svg",
+    width: 100,
+    height: 100,
+  },
+  {
+    skill_name: "flutter",
+    Image: "/skillicons/flutter.svg",
+    width: 100,
+    height: 100,
+  },
+];

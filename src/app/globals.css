@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 27, 27, 27;
+    --foreground: 225 225 225;
+    --muted: 115 115 115;
+    --accent: 180, 100, 255;
+  }
+}
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+
+  .custom-bg {
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(var(--accent), 0.8);
+    backdrop-filter: blur(0.5px);
+    box-shadow: inset 0px 17px 5px -9px rgba(180, 100, 255, 0.05),
+      10px 10px 20px 5px rgba(180, 100, 255, 0.3);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .custom-bg:hover {
+    box-shadow: 0px 4px 6px rgba(180, 100, 255, 0.7),
+      10px 10px 15px rgba(180, 100, 255, 0.5);
+    border-color: rgba(var(--accent), 1);
+
+    transition: box-shadow 0.3s ease;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 100px);
+  }
+}
+
+.cursive {
+  font-family: "Cedarville Cursive", cursive;
+}
+.text-gradient {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #6a5acd 0%,
+    /* Slate Blue */ #00bfff 50%,
+    /* Deep Sky Blue */ #8a2be2 100% /* Blue Violet */
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.text-gradient:hover {
+  text-shadow: 0 0 20px rgba(106, 90, 205, 0.8), 0 0 30px rgba(0, 191, 255, 0.6); /* Glowing effect */
+}
+
+.button-primary {
+  background: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.32) 100%
+    ),
+    rgba(113, 47, 255, 0.12);
+  box-shadow: inset 0 0 12px #bf97ff3d;
+}
+.button-primary:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.42) 100%
+    ),
+    rgba(113, 47, 255, 0.24);
+  box-shadow: inset 0 0 12px #bf97ff70;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

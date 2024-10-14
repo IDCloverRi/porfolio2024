@@ -5,7 +5,7 @@ import { posts } from "../../constants/postData";
 
 const CardList = () => {
   return (
-    <div className="flex flex-col items-center py-5 z-[20]">
+    <div className="flex flex-col items-center py-5 z-30">
       <h1 className="text-3xl font-bold my-10 text-white">Recent Posts</h1>
       <div className="space-y-8 w-full">
         {posts.map((item) => (

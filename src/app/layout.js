@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       >
         <StarsCanvas />
         <Navbar />
-        <div className=" pt-[65px]  overflow-auto">{children}</div>
+        {children}
       </body>
     </html>
   );

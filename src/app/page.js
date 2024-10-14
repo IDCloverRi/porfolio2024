@@ -12,6 +12,7 @@ export default function Home() {
         <div className="h-screen">
           <HomePage />
         </div>
+
         <CategoryList />
         <CardList />
 

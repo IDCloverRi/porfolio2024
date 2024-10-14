@@ -5,7 +5,7 @@ import ItemLayout from "../sub/ItemLayout";
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 px-10  z-[20]">
+    <section id="skills" className="py-20 px-10 ">
       <h5 className="text-center text-lg text-gray-400  ">
         What Skills I Have
       </h5>

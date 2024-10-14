@@ -38,7 +38,7 @@ const categories = [
 
 const CategoryList = () => {
   return (
-    <section id="blog" className="container mx-auto py-20 px-6 ">
+    <section id="blog" className="container mx-auto py-20 px-6  ">
       <h5 className="text-center text-lg text-gray-400">
         Recent topics of interest
       </h5>

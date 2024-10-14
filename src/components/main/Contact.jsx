@@ -4,7 +4,7 @@ import ItemLayout from "../sub/ItemLayout";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-12 px-6  z-[20]">
+    <section id="contact" className="py-12 px-6 z-20">
       <h5 className="text-center text-lg text-gray-400">Get In Touch</h5>
       <h2 className="text-center text-3xl text-white mb-8">Contact Me</h2>
 
@@ -17,7 +17,7 @@ const Contact = () => {
               <h4 className="text-xl font-semibold">Email</h4>
               <a
                 href="mailto:nguyenhuongdiu1710@gmail.com"
-                className="mt-2 inline-block text-sm text-white hover:text-purple-500 transition-colors duration-300"
+                className="mt-2 inline-block text-sm text-white hover:text-purple-500 transition-colors duration-300 "
               >
                 Send a message
               </a>

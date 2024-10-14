@@ -60,7 +60,7 @@ const Card = ({ item }) => {
           </div>
           <button
             onClick={handleReadMore}
-            className="mt-4 text-blue-500 font-semibold hover:underline"
+            className="mt-4 text-blue-500 font-semibold hover:underline "
           >
             Read More
           </button>
@@ -69,8 +69,8 @@ const Card = ({ item }) => {
 
       {/* Modal hiển thị khi bấm Read More */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white mt-[80px] mb-[40px] p-6 rounded-lg shadow-lg w-[90%] max-w-8xl h-[90%] relative overflow-hidden flex flex-col md:flex-row">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999] ">
+          <div className="bg-white mt-[80px] mb-[40px] p-6 rounded-lg shadow-lg w-[90%] max-w-8xl h-[90%] relative overflow-hidden flex flex-col md:flex-row ">
             <button
               className="absolute top-4 right-4 bg-purple-500 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-purple-700 hover:shadow-lg transition-all"
               onClick={handleCloseModal}

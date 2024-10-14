@@ -5,15 +5,15 @@ import ItemLayout from "../sub/ItemLayout.jsx";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-10  z-[20]">
+    <section id="projects" className="py-20 px-10 ">
       <h5 className="text-center text-lg text-gray-400">My Recent Work</h5>
       <h2 className="text-center text-3xl text-white mb-10">Project</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto ">
         {project_images.map(({ id, image, title, github }) => (
           <ItemLayout
             key={id}
-            className="custom-bg bg-opacity-50 p-6 rounded-2xl flex flex-col h-full"
+            className="custom-bg bg-opacity-50 p-6 rounded-2xl flex flex-col h-full z-20"
           >
             <div className="rounded-xl overflow-hidden">
               <img

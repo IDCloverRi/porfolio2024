@@ -13,7 +13,7 @@ const Projects = () => {
         {project_images.map(({ id, image, title, github }) => (
           <ItemLayout
             key={id}
-            className="custom-bg bg-opacity-50 p-6 rounded-2xl"
+            className="custom-bg bg-opacity-50 p-6 rounded-2xl flex flex-col h-full"
           >
             <div className="rounded-xl overflow-hidden">
               <img
@@ -23,7 +23,7 @@ const Projects = () => {
               />
             </div>
             <h3 className="text-white text-xl mt-4">{title}</h3>
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-4 mt-auto">
               <a
                 href={github}
                 className="button-primary  text-white py-2 px-4 rounded"

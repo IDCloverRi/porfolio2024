@@ -13,7 +13,7 @@ const HomeContent = () => {
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div variants={slideInFromTop} className="">
-          <h1 className="text-gradient">Hi I'm Diu Nguyen</h1>
+          <h1 className="text-gradient">Hi I&apos;m Diu Nguyen</h1>
         </motion.div>
         <motion.div
           variants={slideInFromLeft(0.1)}
